@@ -3,8 +3,6 @@ using BillsClientApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mail;
 using System.Net;
-using Amazon.SecurityToken.Model;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BillsClientApi.Controllers;
 [ApiController]
