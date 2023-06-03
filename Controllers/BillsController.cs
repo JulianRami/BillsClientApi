@@ -89,9 +89,10 @@ public class BillsController : ControllerBase
         }
     }
 
-    //[HttpGet]
-    //  public async Task<List<Models.Bills>> Get() =>
-    //    await _billsService.GetAsync();
+    [HttpGet]
+    [Route("api/datos")]
+      public async Task<List<Models.Bills>> GetTable() =>
+        await _billsService.GetAsync();
 
     [HttpGet("{id:length(24)}")]
         public async Task<ActionResult<Models.Bills>> Get(string id)
